@@ -19,8 +19,8 @@ function onReady() {
 
       //trying to append poster img to DOM
       //$('#movie-poster').prepend('<img id="theImg" src="theImg.png" />')
-
-      $('#movie-poster').append('<div class="movie-poster">'  + response.Poster + '</div>');
+      $('#movie-poster').append('<div class="movie-poster">'  +'<img src="'+ response.Poster +'">' + '</div>');
+      //$('#movie-poster').append('<div class="movie-poster">'  + response.Poster + '</div>');
       $('#movie-holder').append('<div class="movie-title">' + 'Title: ' + response.Title + '</div>');
       $('#movie-holder').append('<div class="movie-actors">' + 'Actors: ' + response.Actors + '</div>');
       $('#movie-holder').append('<div class="movie-director">' + 'Director: ' + response.Director + '</div>');
